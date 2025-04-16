@@ -21,7 +21,6 @@
       width: 100%;
       height: 60px;
       background-color: #ffffffdd;
-      backdrop-filter: blur(10px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -116,7 +115,7 @@
         return;
       }
 
-      const res = await fetch('http://localhost:3000/user', {
+      const res = await fetch('https://authappwt.onrender.com/user', {
         headers: { 'Authorization': token }
       });
 

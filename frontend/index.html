@@ -126,7 +126,7 @@
       const gender = document.getElementById('gender').value;
       const location = document.getElementById('location').value;
 
-      const res = await fetch('http://localhost:3000/register', {
+      const res = await fetch('https://authappwt.onrender.com/register', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ username, password, email, age, gender, location })
